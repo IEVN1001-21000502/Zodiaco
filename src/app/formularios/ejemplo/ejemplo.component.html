@@ -1,0 +1,28 @@
+<div>
+    <h1>Sumar dos Numeros</h1>
+   
+    <form [formGroup]="formulario">
+        <div>
+            <label for="">Punto A (x1)</label>
+            <input type="number" formControlName="x1">
+        </div>
+
+        <div>
+            <label for="">Punto A (y1)</label>
+            <input type="number" formControlName="y1">
+        </div>
+
+        <div>
+            <label for="">Punto B (x2)</label>
+            <input type="number" formControlName="x2">
+        </div>
+
+        <div>
+            <label for="">Punto B (y2)</label>
+            <input type="number" formControlName="y2">
+        </div>
+
+        <button (click)="CalcularDistancia()">Calcular Distancia</button>
+        <h3>La distancia es: {{distancia}}</h3>
+    </form>
+</div>
